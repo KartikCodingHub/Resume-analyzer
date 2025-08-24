@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YourBrand — Modern, responsive starter</title>
+    <meta name="description" content="A clean, responsive website starter with accessibility and dark mode." />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="YourBrand home">
+          <span class="brand-mark" aria-hidden="true">★</span>
+          <span class="brand-name">YourBrand</span>
+        </a>
+
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">
+          <span class="theme-icon" data-mode="auto" aria-hidden="true">🌓</span>
+          <span class="theme-text">Theme</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section id="home" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Build a beautiful web presence, fast.</h1>
+            <p>Create a responsive, accessible site with dark mode and great UX out of the box.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#pricing">Get started</a>
+              <a class="btn btn-secondary" href="#features">Learn more</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <div class="placeholder-media">Your image here</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <header class="section-head">
+            <h2>Everything you need</h2>
+            <p>Thoughtful defaults so you can focus on content, not configuration.</p>
+          </header>
+          <div class="grid cards-3">
+            <article class="card">
+              <h3>Responsive by default</h3>
+              <p>Layouts adapt elegantly from mobile to desktop with minimal effort.</p>
+            </article>
+            <article class="card">
+              <h3>Accessible and inclusive</h3>
+              <p>Skip links, focus styles, and semantic HTML for everyone.</p>
+            </article>
+            <article class="card">
+              <h3>Dark mode built-in</h3>
+              <p>Respects system preferences with a user-friendly theme toggle.</p>
+            </article>
+            <article class="card">
+              <h3>Performant</h3>
+              <p>Lean CSS and zero dependencies for a fast start.</p>
+            </article>
+            <article class="card">
+              <h3>Maintainable</h3>
+              <p>Clear structure with utilities and tokens you can extend.</p>
+            </article>
+            <article class="card">
+              <h3>Ready to deploy</h3>
+              <p>Drop into any static host: GitHub Pages, Netlify, Vercel.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section alt">
+        <div class="container">
+          <header class="section-head">
+            <h2>Simple, transparent pricing</h2>
+            <p>Start free. Scale as you grow.</p>
+          </header>
+          <div class="grid cards-3 pricing">
+            <article class="card">
+              <h3>Starter</h3>
+              <p class="price"><span class="currency">$</span>0<span class="per">/mo</span></p>
+              <ul class="list-check">
+                <li>1 page</li>
+                <li>Basic support</li>
+                <li>Community access</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Choose Starter</a>
+            </article>
+            <article class="card highlight">
+              <h3>Pro</h3>
+              <p class="price"><span class="currency">$</span>12<span class="per">/mo</span></p>
+              <ul class="list-check">
+                <li>Up to 5 pages</li>
+                <li>Email support</li>
+                <li>Custom domain</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Choose Pro</a>
+            </article>
+            <article class="card">
+              <h3>Business</h3>
+              <p class="price"><span class="currency">$</span>49<span class="per">/mo</span></p>
+              <ul class="list-check">
+                <li>Unlimited pages</li>
+                <li>Priority support</li>
+                <li>Advanced analytics</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Choose Business</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <header class="section-head">
+            <h2>Contact us</h2>
+            <p>Questions or ready to get started? Send us a message.</p>
+          </header>
+          <form id="contact-form" class="form" novalidate>
+            <div class="grid form-grid">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <p class="field-msg" data-field="name" aria-live="polite"></p>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <p class="field-msg" data-field="email" aria-live="polite"></p>
+              </div>
+              <div class="form-field span-2">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <p class="field-msg" data-field="message" aria-live="polite"></p>
+              </div>
+              <div class="form-field span-2">
+                <label class="checkbox">
+                  <input type="checkbox" id="consent" required />
+                  <span>I consent to having this website store my submitted information.</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> YourBrand. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <noscript>
+      <div class="no-js-msg">JavaScript is disabled. Some interactive features may not work.</div>
+    </noscript>
+  </body>
+</html>
